@@ -1,0 +1,22 @@
+<h1 id="city_name">Testpage</h1>
+<p id="temp">Temperatur: </p>
+<p id="weathertype"></p>
+<img id="weatherpic" src="#">
+<script type="text/javascript">
+
+  // var url = "https://https://dev-77574371.okta.com/oauth2/${authServerId}/.well-known/oauth-authorization-server?client_id=0oa6wnyunzFIc1ZJt5d6";
+  var url = "https://https://dev-77574371.okta.com/oauth2/${authServerId}/.well-known/oauth-authorization-server?client_id=0oa6wnyunzFIc1ZJt5d6";
+    function getData() {
+        fetch(url, {
+            method: "GET"
+        })
+            .then(resp => resp.json())
+            .then(function (dataContainer) {
+                console.log(dataContainer.city);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+    getData();
+</script>

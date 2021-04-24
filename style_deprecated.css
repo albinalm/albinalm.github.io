@@ -1,0 +1,146 @@
+body {
+    /* The image used */
+    background-image: url("images/background.jfif");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    .slide {
+        height: 400px;
+        width: 20%;
+        transition: 0.6s;
+        
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+      
+    }
+.slidershow {
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+}
+.middle {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover {
+    background: #fff;
+}
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+#r1:checked ~ .s1 {
+    margin-left: 0;
+
+}
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+    
+}
+    .LogoIcon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ForgifyLogo {
+        height: 100px;
+        width: 300px;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Gruppo";
+        color: white;
+        font-style: italic;
+        text-shadow: 2px 2px 2px black    
+    }
+
+    .Navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Navbar li {
+        float: right;
+    }
+
+    .Navbar a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: rgb(59, 59, 59);
+        font-family: "Poppins";
+    }
+
+    .Navbar a:hover {
+        background-color: orange;
+    }
+.footer-csharp {
+    position: absolute;
+    top: 740px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.footer-csharp img {
+    width: 140px;
+    height: 140px;
+}
+.footer-css {
+   
+    position: absolute;
+    top: 735px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.footer-css img {
+    width: 140px;
+    height: 100px;
+}
+.footer-js {
+    position: absolute;
+    top: 740px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-js img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+}

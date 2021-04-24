@@ -1,0 +1,264 @@
+body {
+	background-color: rgb(59, 59, 59);
+}
+
+:root {
+	--main-radius: 5px;
+	--main-padding: -30px;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
+	grid-template-areas: "nav nav nav nav" "main main main main" "content content content content" "footer footer footer footer";
+	grid-gap: 0.2rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 12px;
+	background-color: rgb(59, 59, 59);
+	text-align: center;
+}
+
+nav {
+	background-color: rgb(59, 59, 59);
+	grid-area: nav;
+	padding-top: var(--main-padding);
+}
+
+main {
+	background-color: rgb(59, 59, 59);
+	grid-area: main;
+	padding-top: var(--main-padding);
+	/* The image used */
+	background-image: url("images/background.jfif");
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content {
+	background-color: rgb(59, 59, 59);
+	grid-area: content;
+	padding-top: var(--main-padding);
+}
+
+footer {
+	background-color: orange;
+	grid-area: footer;
+	padding-top: var(--main-padding);
+}
+
+h1 {
+	color: white;
+}
+
+#account-page-desc {
+	border: 1.2px solid gray;
+	color: orange;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: none;
+	margin-top: 0%;
+	width: 50%;
+	font-size: 14.76px;
+	height: 50%;
+	overflow: auto;
+	text-align: justify;
+}
+
+#account-page-desc h2 {
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menu-buttons {
+	display: none;
+}
+
+#logoff-button {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#welcome-label {
+	display: none;
+}
+
+#loading-box p {
+	font-size: 60px;
+	color: white;
+}
+
+#messageBox {
+	font-size: 20px;
+	color: orange;
+	text-shadow: 2px 2px black;
+}
+
+.order-history-box {
+	background: lightgray;
+	border-style: inset;
+	border-color: gray;
+	color: black;
+	font-size: 12px;
+}
+
+#button_contactus button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#button_inquiry button {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+@media only screen and (max-width:550px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 0.2fr;
+		grid-template-areas: "nav" "main" "main" "content" "content" "content" "footer";
+	}
+	main {
+		border-radius: 3%;
+	}
+	#account-page-desc {
+		display: none;
+		margin-left: 0%;
+		margin-right: 0%;
+		width: 100%;
+		font-size: 12px;
+	}
+	#loading-box p {
+		font-size: 25px;
+	}
+	#messageBox {
+		font-size: 15px;
+	}
+	#menu-buttons {
+		padding: 4px;
+	}
+}
+
+.logo {
+	margin-top: 10px;
+	width: 50%;
+	max-width: 450px;
+	min-width: 280px;
+}
+
+.Navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.Navbar li {
+	float: right;
+}
+
+.Navbar a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: rgb(59, 59, 59);
+	font-family: "Poppins";
+}
+
+.Navbar a:hover {
+	background-color: orange;
+}
+
+#loading-box {
+	display: none;
+}
+
+#weather-container {
+	float: left;
+	text-align: left;
+}
+
+#weathersymbol {
+	width: 30px;
+	height: 30px;
+}
+
+#weathertype {
+	float: left;
+}
+
+#okta-sign-in.auth-container.main-container[data-se=auth-container] {
+	border-color: orange;
+	border-style: dotted;
+	background: #222222;
+}
+
+#okta-sign-in .o-form .o-form-input #okta-signin-username {
+	background: #111;
+	color: #dddddd;
+}
+
+#okta-sign-in .o-form-input-name-username {
+	border: 0;
+	color: #dddddd;
+}
+
+#okta-sign-in .o-form .o-form-input #okta-signin-password {
+	background: #111;
+	color: #dddddd;
+}
+
+#okta-sign-in.auth-container .okta-form-input-field {
+	background: #111;
+	border: 0;
+	color: #dddddd;
+}
+
+#okta-sign-in .o-form .input-fix input[type=number],
+#okta-sign-in .o-form .input-fix input[type=password],
+#okta-sign-in .o-form .input-fix input[type=tel],
+#okta-sign-in .o-form .input-fix input[type=text],
+#okta-sign-in .o-form .input-fix input[type=textbox] {
+	color: white;
+}
+
+#okta-sign-in.auth-container .o-form-head {
+	color: #dddddd;
+}
+
+#okta-sign-in.auth-container .button-primary {
+	background: #111;
+	border-color: #111;
+	color: #dddddd;
+}
+
+#okta-sign-in.auth-container.main-container .auth-footer {
+	color: #dddddd;
+}
+
+#okta-sign-in.auth-container.main-container .auth-header {
+	border-color: #111;
+}
+
+#okta-sign-in .o-form .custom-checkbox label {
+	color: #ddd;
+}
+
+#okta-sign-in .custom-checkbox input {
+	background: #111;
+}
