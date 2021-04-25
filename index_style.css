@@ -47,7 +47,7 @@ main {
 	background-color: white;
 	grid-area: content;
 	padding-top: var(--main-padding);
-	font-family:'Segoe UI Light';
+	font-family: "Raleway", sans-serif;
 	font-weight: lighter;
 }
 
